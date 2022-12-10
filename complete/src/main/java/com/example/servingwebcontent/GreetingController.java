@@ -13,5 +13,9 @@ public class GreetingController {
 		model.addAttribute("name", name);
 		return "greeting";
 	}
+	@GetMapping("/home")
+	public String homeAction() {
+		return "home";
+	}
 
 }
